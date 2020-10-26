@@ -21,14 +21,46 @@
     </header>
 
     <main>
-
-        <div >
-            <h4>What is the 3rd planet from the sun?</h4>
-            <button >Jupiter</button>
-            <button >Mars</button>
-            <button >Saturn</button>
-            <button >Earth</button>
+        <div class="form-group">
+            <label><p id="instructions"></p></label>
+            <input type="text" id="guess" class="form-control">
         </div>
+
+        <h4>What is the 3rd planet from the sun?</h4>
+        <div class ="col-10">
+            <button class="btn btn-success" type="button" onclick="question(false)">Jupiter</button>
+            <button class="btn btn-danger" type="button" onclick="question(false)">Mercury</button>
+            <button class="btn btn-warning" type="button" onclick="question(false)">Venus</button>
+            <button class="btn btn-info" type="button" onclick="question(true)">Earth</button>
+        </div>
+        <p id="message"></p>
+
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="..." class="rounded mr-2" alt="...">
+              <strong class="mr-auto">Bootstrap</strong>
+              <small>11 mins ago</small>
+              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="toast-body">
+              Hello, world! This is a toast message.
+            </div>
+          </div>
+        
+        <h4>What is the 4th planet from the sun?</h4>
+        <div class ="col-10">
+            <button class="btn btn-success" type="button" onclick="question(false)">Jupiter</button>
+            <button class="btn btn-danger" type="button" onclick="question(true)">Mars</button>
+            <button class="btn btn-warning" type="button" onclick="question(false)">Venus</button>
+            <button class="btn btn-info" type="button" onclick="question(false)">Pluto</button>
+        </div>
+        <p id="message"></p>
+
+        <script src="script.js"></script>
+        <script src="run.js"></script>
+    
     </main>
 
 </body>
